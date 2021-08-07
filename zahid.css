@@ -1,0 +1,204 @@
+body{
+    font-family: 'Playfair Display', serif;
+    /* pias */
+    margin: 0;
+    padding: 0;
+}
+ 
+.h1-color{
+    font-size: 50px;
+    color: white;
+}
+/* section{
+    
+   
+    width: 100%;
+} */
+.fast-section{
+  
+
+    width: 100%;
+    background-color: royalblue;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+a:hover{ 
+    background-color: gold;
+}
+.fast-width{
+   
+  
+    
+    /* hobe na padding */
+    /* padding-left: 500px;  */
+}
+.fast-width img{
+    width: 90%;
+    /* akhane padding asbe kno ?????????????????????? */
+   /* padding-right: 250px; */
+}
+.link-button{
+    text-decoration: none;
+    color: azure;
+    background-color: hotpink;
+    padding: 10px 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    
+} 
+/* top players style */
+.top-players{
+    /* upore nise aktu margin dilam r ki top players er */
+    margin: 100px 0;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    grid-gap: 25px;
+    row-gap: 25px;
+    margin: auto;
+   
+}
+.player img{
+    width: 90%;
+    margin: 17px;
+}
+.player{
+   
+    box-shadow: 10px 10px 40px gray;
+}
+.player h1, p{
+    margin-left: 17px;
+}
+.highlight-bar{
+    width: 80%;
+    font-size: 30px;
+    /* padding-left: 50px;
+    margin-right: 12px; */
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+}
+.highlight-bar img{
+    width: 100%;
+    
+   padding-right: 10px;
+}
+.last-bar{
+    
+}
+
+footer{
+    width: 300px;
+    margin: auto;
+}
+footer img{
+    width: 100%;
+}
+footer h5{
+    text-align: center;
+}
+footer .icon{
+    display: flex;
+    justify-content: center;
+
+}
+footer .icon span a{
+    color: black;
+    background: gray;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 100%;
+}
+/* .fav-icone{
+    height: 180%;
+   width: 60%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 550px;
+    margin-top: 40px;
+}
+.fav-icone img{
+    width: 100%;
+    text-align: center;
+    margin-left: 100px;
+}
+.logo{
+    height: 80%;
+    width: 20px;
+    font-size:50px;
+     margin-left: 58%;
+     margin-right: 5%;
+     padding-left: 10px;
+     margin-top: 40px;
+     position: relative;
+     display: flex;
+} */
+
+/* Media Queries */
+
+/* main-width na bro min-width hobe */
+@media (min-width: 0) and (max-width:576px) { 
+    .players{
+        /* display is not none, display is to be grid */
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+        grid-gap: 25px;
+        row-gap: 25px;
+        margin: auto;
+    }
+    .fast-section{
+        width: 100%;
+        background-color: royalblue;
+        /* display: flex; */
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .highlight-bar{
+        width: 80%;
+        font-size: 30px;      
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+    }
+    .fast-width{
+        margin: 50px 0 0 20px;
+    }
+    .last-bar{
+        margin: 50px 0;
+    }
+    footer{
+         padding: 100px 0;
+    }
+}
+
+@media (min-width: 576px) and (max-width:800px) { 
+    .players{
+        
+        grid-template-columns: repeat(2, 1fr);
+         
+    }
+     .fast-section{
+         height: 500px;
+     }
+     .highlight-bar{
+             
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+    }
+    .last-bar{
+        margin: 50px 0;
+    }
+    footer{
+        padding: 100px 0;
+   }
+}
+
+ /* Happy Coding */
